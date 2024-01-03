@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>动态圣诞老人和圣诞祝福</title>
+<style>
+  body {
+    text-align: center;
+    background-color: #ccffcc;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  @keyframes santaAnimation {
+    0% { left: -100px; bottom: 100px; }
+    50% { left: 50%; transform: translateX(-50%); bottom: 100px; }
+    100% { left: 100%; bottom: 100px; }
+  }
+
+  .santa {
+    position: fixed;
+    bottom: 300px;
+    left: -100px;
+    width: 300px; /* 设置圣诞老人动图宽度 */
+    height: auto;  /* 高度自动缩放 */
+    animation: santaAnimation 10s linear infinite;
+  }
+
+  .christmas-message {
+    font-size: 2em;
+    color: #d60000;
+    margin-top: 100px;
+  }
+</style>
+</head>
+<body>
+
+<div class="christmas-message">
+  圣诞老人嘎嘎嘎
+</div>
+
+<img src="http://5b0988e595225.cdn.sohucs.com/images/20191217/5e4710aafed74555ab7e8c5db3e6c711.gif" alt="动态圣诞老人" class="santa">
+
+</body>
+</html>
